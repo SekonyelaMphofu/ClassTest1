@@ -1,140 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Joy in A Box | Luxury Comfort</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Joy in A Box | Luxury Comfort</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- New fonts: Cormorant Garamond (display), Great Vibes (script logo), Jost (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <div class="logo">
-                <a href="index.html">Joy in A Box</a>
-            </div>
-            <nav class="main-nav">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li class="dropdown-trigger">
-                        <a href="decor.html">Décor <i class="fas fa-chevron-down dropdown-arrow"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="decor.html#wall-art">Wall Art</a></li>
-                            <li><a href="decor.html#vases">Vases</a></li>
-                            <li><a href="decor.html#lighting">Lighting</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="made-to-order.html">Made-to-Order</a></li>
-                    <li><a href="fluff-snuggles.html">Fluff & Snuggles</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-icons">
-                <a href="#" aria-label="Account" class="icon-btn"><i class="far fa-user"></i></a>
-                <a href="#" aria-label="Favourites" class="icon-btn"><i class="far fa-heart"></i></a>
-                <a href="#" aria-label="Cart" class="icon-btn cart-icon"><i class="fas fa-shopping-bag"></i> <span class="cart-count">0</span></a>
-            </div>
-            <button class="mobile-menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+
+  <!-- ═══ HEADER ═══════ -->
+  <header class="header" id="mainHeader">
+    <div class="container header-container">
+
+  
+      <div class="logo">
+        <a href="index.html">
+          <!-- Botanical SVG emblem -->
+          <svg class="logo-emblem" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="21" stroke="#C6A43F" stroke-width="1"/>
+            <!-- Botanical branch left -->
+            <path d="M14 28 Q12 22 16 18" stroke="#C6A43F" stroke-width="1" stroke-linecap="round" fill="none"/>
+            <ellipse cx="13.5" cy="21" rx="3" ry="1.5" transform="rotate(-30 13.5 21)" fill="#C6A43F" opacity="0.55"/>
+            <ellipse cx="15" cy="17" rx="2.5" ry="1.2" transform="rotate(-50 15 17)" fill="#C6A43F" opacity="0.4"/>
+            <!-- Botanical branch right -->
+            <path d="M30 28 Q32 22 28 18" stroke="#C6A43F" stroke-width="1" stroke-linecap="round" fill="none"/>
+            <ellipse cx="30.5" cy="21" rx="3" ry="1.5" transform="rotate(30 30.5 21)" fill="#C6A43F" opacity="0.55"/>
+            <ellipse cx="29" cy="17" rx="2.5" ry="1.2" transform="rotate(50 29 17)" fill="#C6A43F" opacity="0.4"/>
+            <!-- Centre diamond -->
+            <path d="M22 14 L24 20 L22 22 L20 20 Z" fill="#C6A43F" opacity="0.8"/>
+            <!-- Stem -->
+            <line x1="22" y1="22" x2="22" y2="30" stroke="#C6A43F" stroke-width="1" stroke-linecap="round"/>
+          </svg>
+          <div class="logo-text-wrap">
+            <span class="logo-script">Joy in A Box</span>
+            <span class="logo-sub">Luxury Comfort &amp; Décor</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- ── Nav ── -->
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="dropdown-trigger">
+            <a href="decor.html">Décor <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="decor.html#wall-art">Wall Art</a></li>
+              <li><a href="decor.html#vases">Vases</a></li>
+              <li><a href="decor.html#lighting">Lighting</a></li>
+            </ul>
+          </li>
+          <li><a href="made-to-order.html">Made-to-Order</a></li>
+          <li><a href="fluff-snuggles.html">Fluff &amp; Snuggles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ── Icons ── -->
+      <div class="header-icons">
+        <a href="#" aria-label="Account" class="icon-btn"><i class="far fa-user"></i></a>
+        <a href="#" aria-label="Favourites" class="icon-btn"><i class="far fa-heart"></i></a>
+        <a href="#" aria-label="Cart" class="icon-btn cart-icon"><i class="fas fa-shopping-bag"></i> <span class="cart-count">0</span></a>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Menu" id="menuToggle"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- ═══ MAIN ════-->
+  <main>
+
+    <!-- ── Hero ── -->
+    <section class="hero">
+      <div class="hero-image">
+     <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <p class="hero-eyebrow">Handcrafted with love</p>
+          <h1 class="hero-title">Refined Living Spaces<br>for <em>Modern Living</em></h1>
+          <p class="hero-subtitle">Timeless elegance, crafted for those who cherish serenity and refinement.</p>
+          <div class="hero-cta-group">
+            <a href="decor.html" class="btn btn-gold">Explore Collection</a>
+            <a href="made-to-order.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.7);color:white;">Made-to-Order</a>
+          </div>
         </div>
-    </header>
+        <div class="hero-scroll">Scroll</div>
+      </div>
+    </section>
 
-    <main>
-        <section class="hero">
-            <div class="hero-image">
-                <div class="hero-overlay"></div>
-                <div class="hero-content container">
-                    <h1 class="hero-title">Luxury Comfort for Modern Living</h1>
-                    <p class="hero-subtitle">Timeless elegance, crafted for those who cherish serenity and refinement.</p>
-                    <a href="decor.html" class="btn btn-gold">Explore Collection</a>
-                </div>
-            </div>
-        </section>
+    <!-- ── Featured Products ── -->
+    <section class="featured container">
+      <div class="section-header">
+        <span class="section-eyebrow">Curated Selection</span>
+        <h2 class="section-title">Signature Pieces</h2>
+        <div class="section-divider"><span class="divider-diamond">◆</span></div>
+      </div>
 
-        <section class="featured container">
-            <div class="section-header">
-                <span class="section-tag">Curated Selection</span>
-                <h2 class="section-title">Featured Treasures</h2>
-            </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/aura-vase.png" alt="Aura Ceramic Vase">
-                        <button class="fav-btn"><i class="far fa-heart"></i></button>
-                    </div>
-                    <div class="product-info">
-                        <h3>Aura Ceramic Vase</h3>
-                        <p class="price">M 89</p>
-                        <button class="btn-add-cart">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/silk-throw.jpg" alt="Silk Woven Throw">
-                        <button class="fav-btn"><i class="far fa-heart"></i></button>
-                    </div>
-                    <div class="product-info">
-                        <h3>Silk Woven Throw</h3>
-                        <p class="price">M 149</p>
-                        <button class="btn-add-cart">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/gilded-horizon.jpg" alt="Gilded Horizon">
-                        <button class="fav-btn"><i class="far fa-heart"></i></button>
-                    </div>
-                    <div class="product-info">
-                        <h3>Gilded Horizon</h3>
-                        <p class="price">M 215</p>
-                        <button class="btn-add-cart">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="cta-center">
-                <a href="decor.html" class="btn btn-outline">View All Décor</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <div class="logo-footer">Joy in A Box</div>
-                <p>Elevating everyday moments with timeless design and soft luxury.</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-            <div class="footer-newsletter">
-                <h4>Newsletter</h4>
-                <p>Receive serenity & style in your inbox.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-            <div class="footer-contact">
-                <h4>Contact</h4>
-                <address>
-                    <p><i class="far fa-envelope"></i> mokokoane@joyinabox.com</p>
-                    <p><i class="fas fa-phone-alt"></i> +266 59380238</p>
-                    <p><i class="far fa-clock"></i> Mon-Fri, 9am-6pm </p>
-                </address>
-            </div>
+      <div class="product-grid">
+        <!-- Card 1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <!--
+              📸 IMAGE SLOT: Aura Ceramic Vase product photo
+                 File: images/product-aura-vase.jpg
+                 Best: close-up of the vase on a neutral background
+                 Size: 600 × 800 px (portrait 3:4)
+            -->
+            <img src="images/marble-tray.jpg" alt="Marble Tray">
+            <button class="fav-btn" aria-label="Add to favourites"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Marble Tray</h3>
+            <p class="price">M 89</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <div class="container"><p>© 2025 Joy in A Box — Pure comfort, artfully presented.</p></div>
+
+        <!-- Card 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <!--
+              📸 IMAGE SLOT: Silk Woven Throw product photo
+                 File: images/product-silk-throw.jpg
+                 Best: throw draped over a chair or neatly folded
+                 Size: 600 × 800 px (portrait 3:4)
+            -->
+            <img src="images/pampas-grass.jpg" alt="Pampas Grass">
+            <button class="fav-btn" aria-label="Add to favourites"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Pampas Grass</h3>
+            <p class="price">M 149</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
         </div>
-    </footer>
 
-    <a href="https://wa.me/18004399021" class="floating-wa" target="_blank" aria-label="WhatsApp Chat"><i class="fab fa-whatsapp"></i></a>
-    <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+        <!-- Card 3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <!--
+              📸 IMAGE SLOT: Gilded Horizon wall art product photo
+                 File: images/product-gilded-horizon.jpg
+                 Best: art piece hanging on a wall in context
+                 Size: 600 × 800 px (portrait 3:4)
+            -->
+            <img src="images/wall-clock.jpg" alt="Wall Clock">
+            <button class="fav-btn" aria-label="Add to favourites"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Wall Clock</h3>
+            <p class="price">M 215</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="cta-center">
+        <a href="decor.html" class="btn btn-outline">View All Décor</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo-footer">Joy in A Box</div>
+        <p>Elevating everyday moments with timeless design and soft luxury.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Receive serenity &amp; style in your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <address>
+          <p><i class="far fa-envelope"></i> mokokoane@joyinabox.com</p>
+          <p><i class="fas fa-phone-alt"></i> +266 5778348</p>
+          <p><i class="far fa-clock"></i> Mon–Fri, 9am–5pm</p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p>© 2026 Joy in A Box — Pure comfort, artfully presented.</p></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2665778348" class="floating-wa" target="_blank" aria-label="WhatsApp Chat"><i class="fab fa-whatsapp"></i></a>
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script>
+    // Header scroll shadow
+    const header = document.getElementById('mainHeader');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 30);
+      document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 300);
+    });
+
+    // Mobile menu
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('mainNav').classList.toggle('active');
+    });
+
+    // Scroll to top
+    document.getElementById('scrollTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Fade-up on scroll (optional progressive enhancement)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Add to cart feedback
+    document.querySelectorAll('.btn-add-cart').forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.textContent = '✓ Added!';
+        this.style.background = '#C6A43F';
+        this.style.color = 'white';
+        this.style.borderColor = '#C6A43F';
+        setTimeout(() => {
+          this.textContent = 'Add to Cart';
+          this.style.background = '';
+          this.style.color = '';
+          this.style.borderColor = '';
+        }, 1800);
+        const count = document.querySelector('.cart-count');
+        count.textContent = parseInt(count.textContent) + 1;
+      });
+    });
+
+    // Fav toggle
+    document.querySelectorAll('.fav-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const icon = this.querySelector('i');
+        icon.classList.toggle('far');
+        icon.classList.toggle('fas');
+        icon.style.color = this.classList.contains('active') ? '#e05a5a' : '';
+      });
+    });
+  </script>
 </body>
 </html>
